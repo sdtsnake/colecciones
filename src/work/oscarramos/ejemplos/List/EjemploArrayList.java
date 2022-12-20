@@ -1,4 +1,4 @@
-package work.oscarramos.ejemplos.set;
+package work.oscarramos.ejemplos.List;
 
 import work.oscarramos.ejemplos.modelo.Alumno;
 

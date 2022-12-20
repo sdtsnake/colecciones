@@ -2,13 +2,15 @@ package work.oscarramos.ejemplos.set;
 
 import work.oscarramos.ejemplos.modelo.Alumno;
 
+import java.util.Comparator;
 import java.util.Set;
 import java.util.TreeSet;
 
 public class EjemploTreeSetComparable {
     public static void main(String[] args) {
 
-        Set<Alumno> sa = new TreeSet<>((a, b)-> b.getNota().compareTo(a.getNota())) ;
+        //Set<Alumno> sa = new TreeSet<>((a, b)-> b.getNota().compareTo(a.getNota())) ;
+        Set<Alumno> sa = new TreeSet<>(Comparator.comparing(Alumno::getNota)) ;
 
         sa.add(new Alumno("Oscar", 9));
         sa.add(new Alumno("Paola", 8));
